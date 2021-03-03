@@ -134,4 +134,38 @@ body {
   height: 100vh;
   background-color: #181818;
 }
+
+.section .leftBar {
+  height: 100%;
+  width: 5.3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #252525;
+}
+
+.section .leftBar button {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+
+.section .leftBar button:hover {
+  background-color: #383838;
+}
+
+.section .videoSection {
+  overflow: scroll;
+  overflow-x: hidden;
+}
 /*# sourceMappingURL=file.css.map */
