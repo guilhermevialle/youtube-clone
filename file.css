@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #282828;
+}
+
+.header {
+  height: 10vh;
+  width: 100vw;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header svg {
+  height: 26px;
+}
+
+.header .logoAndMenu {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logoAndMenu img {
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header .search {
+  width: 50%;
+  height: 100%;
+  border: 3px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .search input[type="text"] {
+  width: 89%;
+  height: 33px;
+  padding: 0 10px;
+  color: #000;
+  border: 1px solid #bebebe;
+  border-radius: 2px 0 0 2px;
+  z-index: 2;
+}
+
+.header .search input:focus {
+  border: 1.1px solid #1c62b9;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.header .search button {
+  width: 11%;
+  height: 33px;
+  border: 1px solid #bebebe;
+  border-left: 0;
+  top: 13px;
+  right: 0;
+  border-radius: 0px 2px 2px 0;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f0f0f0;
+  z-index: 1;
+}
+
+.header .search button i {
+  opacity: 0.5;
+  -webkit-transition: all 0.07s ease-in-out;
+  transition: all 0.07s ease-in-out;
+}
+
+.header .search button:hover i {
+  opacity: 0.95;
+}
+
+.header .search button:hover {
+  background-color: #e4e4e4;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 0 2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 0 2px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.07s ease-in-out;
+  transition: all 0.07s ease-in-out;
+}
+/*# sourceMappingURL=file.css.map */
