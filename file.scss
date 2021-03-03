@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -14,6 +18,9 @@ body {
     background-color: #333;
 
     display: flex;
+    justify-content: space-between;
+
+    position: fixed;
 
     svg {
         height: 26px;
@@ -36,8 +43,6 @@ body {
         width: 50%;
         height: 100%;
 
-        border: 3px solid white;
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,46 +51,49 @@ body {
             width: 89%;
             height: 33px;
             padding: 0 10px;
-            color: #000;
-            border: 1px solid #bebebe;
+            color: white;
             border-radius: 2px 0 0 2px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
             z-index: 2;
-        }
+            background-color: #181818;
+            font-size: 1rem;
 
-        input:focus {
-            border: 1.1px solid #1c62b9;
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+            &:focus {
+                border: 1px solid #1c62b9;
+                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+            }
         }
 
         button {
             width: 11%;
             height: 33px;
-            border: 1px solid #bebebe;
             border-left: 0;
             top: 13px;
             right: 0;
+            border: none;
             border-radius: 0px 2px 2px 0;
+            color: rgba(255, 255, 255, 0.5);
             cursor: pointer;
             font-size: 14px;
             text-align: center;
-            background-color: #f0f0f0;
+            background-color: #3d3d3d;
             z-index: 1;
         }
+    }
 
-        button i {
-            opacity: 0.5;
-            transition: all 0.07s ease-in-out;
-        }
+    .userOptions {
+        width: 30%;
+        height: 100%;
 
-        button:hover i {
-            opacity: 0.95;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        button:hover {
-            background-color: #e4e4e4;
-            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
-                inset 0 0 2px rgba(0, 0, 0, 0.05);
-            transition: all 0.07s ease-in-out;
+        img {
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+            border-radius: 50%;
         }
     }
 }
