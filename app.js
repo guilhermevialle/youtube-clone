@@ -6,6 +6,19 @@ const leftBarButtons = document.querySelectorAll(".leftBar button");
 const svgInsideButtons = document.querySelectorAll(".leftBar button svg");
 const buttonTexts = document.querySelectorAll(".leftBar button p");
 
+//change Activy
+function changeActiveItem(index) {
+    for (let i = 0; i < buttonTexts.length; i++) {
+        if (svgInsideButtons[i].style.fill == "white") {
+            svgInsideButtons[i].style.fill = "#909090";
+            buttonTexts[i].style.color = "#909090";
+        }
+    }
+
+    buttonTexts[index].style.color = "white";
+    svgInsideButtons[index].style.fill = "white";
+}
+
 // animating youtube side bar
 var count = 0;
 
