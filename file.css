@@ -17,7 +17,7 @@ body {
 .header {
   height: 9vh;
   width: 100%;
-  background-color: #252525;
+  background-color: #202020;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,11 +58,11 @@ body {
 
 .header .search input[type="text"] {
   width: 89%;
-  height: 33px;
+  height: 30px;
   padding: 0 10px;
   color: white;
   border-radius: 2px 0 0 2px;
-  border: 1px solid rgba(80, 80, 80, 0.3);
+  border: 1px solid #303030;
   background-color: #121212;
   font-size: 1rem;
   outline: none;
@@ -76,7 +76,8 @@ body {
 
 .header .search button {
   width: 11%;
-  height: 33px;
+  height: 30px;
+  outline: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,9 +89,13 @@ body {
           align-items: center;
   border: none;
   border-radius: 0px 2px 2px 0;
-  color: #888888;
+  color: #666666;
   cursor: pointer;
   background-color: #3d3d3d;
+}
+
+.header .search button:hover {
+  color: #888888;
 }
 
 .header .search button svg {
