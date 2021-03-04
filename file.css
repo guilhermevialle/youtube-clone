@@ -129,12 +129,33 @@ body {
   background-color: #202020;
   display: none;
   opacity: 0;
+  overflow: scroll;
+  overflow-x: hidden;
   border: 1px solid #303030;
   border-top: none;
   cursor: pointer;
   position: absolute;
   right: 100%;
   top: 5%;
+}
+
+.header .userOptions .notifications .notificationsDropDown::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.header .userOptions .notifications .notificationsDropDown ::-webkit-scrollbar-thumb {
+  background: #909090;
+  border-radius: 0px;
+}
+
+.header .userOptions .notifications .notificationsDropDown ::-webkit-scrollbar-thumb:hover {
+  background: #909090;
+}
+
+.header .userOptions .notifications .notificationsDropDown ::-webkit-scrollbar-track {
+  background: #202020;
+  border-radius: 10px;
 }
 
 .header .userOptions .notifications .notificationsDropDown .notificationTittle {

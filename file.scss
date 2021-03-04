@@ -111,6 +111,9 @@ body {
                 display: none;
                 opacity: 0;
 
+                overflow: scroll;
+                overflow-x: hidden;
+
                 border: 1px solid #303030;
                 border-top: none;
                 cursor: pointer;
@@ -118,6 +121,22 @@ body {
                 position: absolute;
                 right: 100%;
                 top: 5%;
+
+                &::-webkit-scrollbar {
+                    width: 10px;
+                    height: 10px;
+                }
+                ::-webkit-scrollbar-thumb {
+                    background: #909090;
+                    border-radius: 0px;
+                }
+                ::-webkit-scrollbar-thumb:hover {
+                    background: #909090;
+                }
+                ::-webkit-scrollbar-track {
+                    background: #202020;
+                    border-radius: 10px;
+                }
 
                 .notificationTittle {
                     width: 100%;

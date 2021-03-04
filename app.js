@@ -28,6 +28,7 @@ function openFade(item) {
     boxForClose.forEach((box) => {
         box.style.opacity = 0;
         box.style.display = "none";
+        box.style.zIndex = 10;
     });
 
     if (opened == 1) {
