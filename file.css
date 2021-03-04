@@ -119,6 +119,22 @@ body {
   position: relative;
 }
 
+.header .userOptions .notifications {
+  position: relative;
+}
+
+.header .userOptions .notifications .notificationsDropDown {
+  width: 478px;
+  height: 623px;
+  background-color: #202020;
+  border: 1px solid #303030;
+  border-top: none;
+  cursor: pointer;
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+
 .header .userOptions .gridBar {
   position: relative;
 }

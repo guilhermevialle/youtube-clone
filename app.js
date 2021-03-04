@@ -25,6 +25,11 @@ uploadOptions.addEventListener("click", openUploadOptions, false);
 var opened = 0;
 
 function openFade(item) {
+    boxForClose.forEach((box) => {
+        box.style.opacity = 0;
+        box.style.display = "none";
+    });
+
     if (opened == 1) {
         opened = 0;
         tl.to(item, 0.2, {
