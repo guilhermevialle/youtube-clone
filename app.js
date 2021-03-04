@@ -13,7 +13,7 @@ const dropdownProfileSettings = document.querySelector(
 const uploadOptions = document.querySelector(".uploadOptions");
 const gridBar = document.querySelector(".gridBar");
 const boxForClose = document.querySelectorAll("#boxForClose");
-console.log(boxForClose);
+const notifications = document.querySelector(".notifications");
 
 //open profile settings
 const tl = new TimelineMax();
@@ -66,6 +66,14 @@ gridBar.addEventListener(
     "click",
     () => {
         openFade(".gridDropDown");
+    },
+    false
+);
+
+notifications.addEventListener(
+    "click",
+    () => {
+        openFade(".notificationsDropDown");
     },
     false
 );
