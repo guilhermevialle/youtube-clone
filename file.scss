@@ -608,6 +608,30 @@ body {
                 "videoInfo";
 
             cursor: pointer;
+            position: relative;
+
+            .timeBox {
+                content: "sla";
+                border-radius: 2px;
+                height: 18px;
+
+                background-color: #020000;
+                position: absolute;
+                bottom: 51.5%;
+                right: 2%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding: 2.5px;
+
+                p {
+                    color: white;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
         }
 
         .videoImg {

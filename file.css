@@ -663,6 +663,33 @@ body {
   gap: 0px 0px;
       grid-template-areas: "videoImg" "imgChannelAndVideoName" "videoInfo";
   cursor: pointer;
+  position: relative;
+}
+
+.section .videoSection .video .timeBox {
+  content: "sla";
+  border-radius: 2px;
+  height: 18px;
+  background-color: #020000;
+  position: absolute;
+  bottom: 51.5%;
+  right: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5px;
+}
+
+.section .videoSection .video .timeBox p {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .section .videoSection .videoImg {
