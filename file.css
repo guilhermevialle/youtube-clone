@@ -119,6 +119,65 @@ body {
   position: relative;
 }
 
+.header .userOptions .gridBar {
+  position: relative;
+}
+
+.header .userOptions .gridBar .gridDropDown {
+  width: 300px;
+  height: 242px;
+  background-color: #202020;
+  display: none;
+  opacity: 0;
+  border: 1px solid #303030;
+  border-top: none;
+  cursor: pointer;
+  position: absolute;
+  right: 50%;
+}
+
+.header .userOptions .gridBar .gridDropDown button {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header .userOptions .gridBar .gridDropDown button:first-child {
+  margin-top: 10px;
+  height: 50px;
+  border-bottom: 1px solid #303030;
+}
+
+.header .userOptions .gridBar .gridDropDown button:nth-child(3) {
+  height: 50px;
+  border-bottom: 1px solid #303030;
+}
+
+.header .userOptions .gridBar .gridDropDown button:last-child {
+  margin-bottom: 10px;
+}
+
+.header .userOptions .gridBar .gridDropDown button svg {
+  margin: 0 20px;
+}
+
+.header .userOptions .gridBar .gridDropDown button:hover {
+  background-color: #383838;
+}
+
 .header .userOptions .uploadOptions .uploadDropDownBar {
   width: 207px;
   height: 100px;

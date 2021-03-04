@@ -100,6 +100,68 @@ body {
 
         position: relative;
 
+        .gridBar {
+            position: relative;
+
+            .gridDropDown {
+                width: 300px;
+                height: 242px;
+                background-color: #202020;
+
+                display: none;
+                opacity: 0;
+
+                border: 1px solid #303030;
+                border-top: none;
+                cursor: pointer;
+
+                position: absolute;
+                right: 50%;
+
+                button {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    width: 100%;
+                    height: 40px;
+                    outline: none;
+
+                    border: none;
+                    background-color: transparent;
+
+                    cursor: pointer;
+
+                    &:first-child {
+                        margin-top: 10px;
+                        height: 50px;
+                        border-bottom: 1px solid #303030;
+                    }
+
+                    &:nth-child(3) {
+                        height: 50px;
+                        border-bottom: 1px solid #303030;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 10px;
+                    }
+
+                    svg {
+                        margin: 0 20px;
+                    }
+
+                    &:hover {
+                        background-color: #383838;
+                    }
+                }
+            }
+        }
+
         .uploadOptions {
             .uploadDropDownBar {
                 width: 207px;
