@@ -5,6 +5,7 @@ const videoSection = document.querySelector(".videoSection");
 const leftBarButtons = document.querySelectorAll(".leftBar button");
 const svgInsideButtons = document.querySelectorAll(".leftBar button svg");
 const buttonTexts = document.querySelectorAll(".leftBar button p");
+const hidedButtons = document.querySelectorAll(".hided");
 
 //change Activy
 function changeActiveItem(index) {
@@ -24,6 +25,9 @@ var count = 0;
 
 const changeWidth = () => {
     if (count == 1) {
+        hidedButtons.forEach((btn) => {
+            btn.style.display = "none";
+        });
         leftBar.style.width = "5.3vw";
         leftBar.style.backgroundColor = "#252525";
         leftBarButtons.forEach((btn, index) => {
@@ -44,6 +48,9 @@ const changeWidth = () => {
     }
 
     count = 1;
+    hidedButtons.forEach((btn) => {
+        btn.style.display = "flex";
+    });
     leftBar.style.width = "17.6vw";
     leftBar.style.backgroundColor = "#202020";
     leftBarButtons.forEach((btn, index) => {

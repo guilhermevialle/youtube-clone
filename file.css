@@ -148,6 +148,10 @@ body {
   transition: 0.3s all ease;
 }
 
+.section .leftBar .hided {
+  display: none;
+}
+
 .section .leftBar button {
   display: block;
   display: -webkit-box;

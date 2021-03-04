@@ -122,6 +122,10 @@ body {
         background-color: #252525;
         transition: 0.3s all ease;
 
+        .hided {
+            display: none;
+        }
+
         button {
             display: block;
 
