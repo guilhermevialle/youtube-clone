@@ -6,6 +6,28 @@ const leftBarButtons = document.querySelectorAll(".leftBar button");
 const svgInsideButtons = document.querySelectorAll(".leftBar button svg");
 const buttonTexts = document.querySelectorAll(".leftBar button p");
 const hidedButtons = document.querySelectorAll(".hided");
+const profileImage = document.querySelector(".profileImage img");
+const dropdownProfileSettings = document.querySelector(
+    ".dropdownProfileSettings"
+);
+
+//open profile settings
+const tl = new TimelineMax();
+
+var opened = 0;
+
+const openSettings = () => {
+    if (opened == 1) {
+        opened = 0;
+        tl.to(dropdownProfileSettings, 0.2, { opacity: 0, ease: Power2.ease });
+        return;
+    }
+
+    opened = 1;
+    tl.to(dropdownProfileSettings, 0.2, { opacity: 1, ease: Power2.ease });
+};
+
+profileImage.addEventListener("click", openSettings, false);
 
 //change Activy
 function changeActiveItem(index) {
