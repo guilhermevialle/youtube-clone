@@ -8,10 +8,9 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #181818;
-  overflow-x: hidden;
 }
 
 .header {
@@ -40,6 +39,7 @@ body {
 
 .header .logoAndMenu svg {
   margin-left: 23px;
+  cursor: pointer;
 }
 
 .header .search {
@@ -118,7 +118,15 @@ body {
           justify-content: space-evenly;
 }
 
-.header .userOptions img {
+.header .userOptions svg {
+  cursor: pointer;
+}
+
+.header .userOptions .profileImage {
+  position: relative;
+}
+
+.header .userOptions .profileImage img {
   width: 32.5px;
   height: 32.5px;
   -o-object-fit: cover;
@@ -126,8 +134,100 @@ body {
   border-radius: 50%;
 }
 
+.header .userOptions .profileImage .dropdownProfileSettings {
+  width: 300px;
+  height: 615px;
+  background-color: #202020;
+  border-right: 1px solid #303030;
+  border-left: 1px solid #303030;
+  position: absolute;
+  right: 180%;
+  top: 5%;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileSettings {
+  height: 216px;
+  border-bottom: 1px solid #303030;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileSettings button {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 34px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileSettings button svg {
+  width: 24px;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileInfo {
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileInfo .profileInfoInInfo {
+  height: 100%;
+  width: 74%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileInfo .profileInfoInInfo h3 {
+  font-weight: 500;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileInfo .profileInfoInInfo p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileInfo .profileInfoInInfo a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #428dcf;
+  font-size: 0.95rem;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileInfo .profileImgInInfo {
+  height: 100%;
+  width: 26%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileInfo .profileImgInInfo img {
+  width: 42px;
+  height: 42px;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+}
+
 .section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #181818;
   display: -webkit-box;
@@ -148,7 +248,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #252525;
+  background-color: #202020;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
@@ -207,6 +307,10 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 12px;
+}
+
+.section .videoSection::-webkit-scrollbar {
+  display: none;
 }
 
 .section .videoSection .video {

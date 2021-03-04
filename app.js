@@ -29,7 +29,6 @@ const changeWidth = () => {
             btn.style.display = "none";
         });
         leftBar.style.width = "5.3vw";
-        leftBar.style.backgroundColor = "#252525";
         leftBarButtons.forEach((btn, index) => {
             btn.style.height = "76px";
             btn.style.flexDirection = "column";
@@ -52,9 +51,8 @@ const changeWidth = () => {
         btn.style.display = "flex";
     });
     leftBar.style.width = "17.6vw";
-    leftBar.style.backgroundColor = "#202020";
     leftBarButtons.forEach((btn, index) => {
-        btn.style.height = "50px";
+        btn.style.height = "45px";
         btn.style.flexDirection = "row";
         btn.style.justifyContent = "start";
         svgInsideButtons[index].style.margin = "40px";
