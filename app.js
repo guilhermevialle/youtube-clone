@@ -10,35 +10,58 @@ const profileImage = document.querySelector(".profileImage img");
 const dropdownProfileSettings = document.querySelector(
     ".dropdownProfileSettings"
 );
+const uploadOptions = document.querySelector(".uploadOptions");
 
 //open profile settings
 const tl = new TimelineMax();
 
+const openUploadOptions = () => {};
+
+uploadOptions.addEventListener("click", openUploadOptions, false);
+
 var opened = 0;
 
-const openSettings = () => {
+function openFade(item) {
     if (opened == 1) {
         opened = 0;
-        tl.to(dropdownProfileSettings, 0.2, { opacity: 0, ease: Power2.ease });
+        tl.to(item, 0.2, {
+            opacity: 0,
+            ease: Power2.ease,
+        }).to(item, 0.3, { display: "none" }, "-0.2");
         return;
     }
 
     opened = 1;
-    tl.to(dropdownProfileSettings, 0.2, { opacity: 1, ease: Power2.ease });
-};
+    tl.to(item, 0.1, { display: "block" }).to(item, 0.2, {
+        opacity: 1,
+        ease: Power2.ease,
+    });
+}
 
-profileImage.addEventListener("click", openSettings, false);
+profileImage.addEventListener(
+    "click",
+    () => {
+        openFade(dropdownProfileSettings);
+    },
+    false
+);
+
+uploadOptions.addEventListener(
+    "click",
+    () => {
+        openFade(".uploadDropDownBar");
+    },
+    false
+);
 
 //change Activy
 function changeActiveItem(index) {
     for (let i = 0; i < buttonTexts.length; i++) {
         if (svgInsideButtons[i].style.fill == "white") {
             svgInsideButtons[i].style.fill = "#909090";
-            buttonTexts[i].style.color = "#909090";
         }
     }
 
-    buttonTexts[index].style.color = "white";
     svgInsideButtons[index].style.fill = "white";
 }
 
