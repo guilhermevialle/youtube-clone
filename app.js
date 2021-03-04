@@ -35,6 +35,7 @@ const changeWidth = () => {
             btn.style.justifyContent = "center";
             svgInsideButtons[index].style.margin = "0";
             buttonTexts[index].style.fontSize = "10px";
+            buttonTexts[index].style.color = "#909090";
         });
         // videos.forEach((video) => {
         // video.style.width = "292px";
@@ -57,6 +58,7 @@ const changeWidth = () => {
         btn.style.justifyContent = "start";
         svgInsideButtons[index].style.margin = "40px";
         buttonTexts[index].style.fontSize = "1rem";
+        buttonTexts[index].style.color = "white";
     });
     // videos.forEach((video) => {
     // video.style.width = "250px";
