@@ -11,7 +11,6 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #181818;
-  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -150,15 +149,11 @@ body {
 .section .leftBar button {
   display: block;
   width: 100%;
-  height: 70px;
+  height: 76px;
   background-color: transparent;
   outline: none;
   border: none;
   cursor: pointer;
-}
-
-.section .leftBar button:nth-child(1) {
-  margin-top: 5px;
 }
 
 .section .leftBar button p {
@@ -179,27 +174,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px;
+  padding: 12px;
 }
 
 .section .videoSection .video {
-  width: 280px;
-  height: 250px;
-  border: 1px solid white;
+  width: 292px;
+  height: 315px;
+  margin: 8px 8px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 50% 20% 30%;
-      grid-template-rows: 50% 20% 30%;
+  -ms-grid-rows: 50% 25% 25%;
+      grid-template-rows: 50% 25% 25%;
   gap: 0px 0px;
       grid-template-areas: "videoImg" "imgChannelAndVideoName" "videoInfo";
 }
@@ -210,15 +205,91 @@ body {
   grid-area: videoImg;
 }
 
+.section .videoSection .videoImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .section .videoSection .imgChannelAndVideoName {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: imgChannelAndVideoName;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .videoSection .imgChannelAndVideoName .imgChannel {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .videoSection .imgChannelAndVideoName .imgChannel img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.section .videoSection .imgChannelAndVideoName .videoName {
+  width: 75%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .videoSection .imgChannelAndVideoName .videoName h4 {
+  font-weight: 500;
+  color: white;
 }
 
 .section .videoSection .videoInfo {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: videoInfo;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section .videoSection .videoInfo .boxVideoInfo {
+  width: 75%;
+  height: 100%;
+  margin-left: 25%;
+}
+
+.section .videoSection .videoInfo .boxVideoInfo p {
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+  color: #aaaaaa;
 }
 /*# sourceMappingURL=file.css.map */
