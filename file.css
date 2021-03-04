@@ -136,7 +136,7 @@ body {
 
 .header .userOptions .profileImage .dropdownProfileSettings {
   width: 300px;
-  height: 615px;
+  height: 660px;
   background-color: #202020;
   border-right: 1px solid #303030;
   border-left: 1px solid #303030;
@@ -225,6 +225,25 @@ body {
 
 .header .userOptions .profileImage .dropdownProfileSettings .profileSettings2 button:hover {
   background-color: #383838;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileSettings3 {
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .userOptions .profileImage .dropdownProfileSettings .profileSettings3 p {
+  margin: 0 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .header .userOptions .profileImage .dropdownProfileSettings .profileInfo {
