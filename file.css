@@ -144,10 +144,25 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #252525;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .section .leftBar button {
   display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 76px;
   background-color: transparent;
@@ -157,7 +172,7 @@ body {
 }
 
 .section .leftBar button p {
-  color: white;
+  color: #909090;
   font-size: 10px;
   font-weight: 400;
 }
@@ -197,6 +212,7 @@ body {
       grid-template-rows: 50% 15% 25%;
   gap: 0px 0px;
       grid-template-areas: "videoImg" "imgChannelAndVideoName" "videoInfo";
+  cursor: pointer;
 }
 
 .section .videoSection .videoImg {
@@ -226,22 +242,14 @@ body {
 .section .videoSection .imgChannelAndVideoName .imgChannel {
   width: 13%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .section .videoSection .imgChannelAndVideoName .imgChannel img {
-  width: 38px;
-  height: 38px;
+  width: 37px;
+  height: 37px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-top: 38.5%;
   border-radius: 50%;
 }
 
@@ -293,5 +301,9 @@ body {
   color: white;
   font-size: 14px;
   color: #aaaaaa;
+}
+
+.section .videoSection .videoInfo .boxVideoInfo p:nth-child(1):hover {
+  color: white;
 }
 /*# sourceMappingURL=file.css.map */
