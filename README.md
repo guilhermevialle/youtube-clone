@@ -12,7 +12,7 @@ I want to make it very clear that this is just a single challenge for me and I k
 
 ![](/Gif/gif.gif)
 
-    ### Screeenshots
+### Screeenshots
 
 ![](/Screenshot/capture.png)
 ![](/Screenshot/capture2.png)
