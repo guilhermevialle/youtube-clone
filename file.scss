@@ -163,11 +163,11 @@ body {
             height: 315px;
 
             // border: 1px solid white;
-            margin: 8px 8px;
+            margin: 0 8px;
 
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 50% 25% 25%;
+            grid-template-rows: 50% 15% 25%;
             gap: 0px 0px;
             grid-template-areas:
                 "videoImg"
@@ -187,11 +187,13 @@ body {
 
         .imgChannelAndVideoName {
             grid-area: imgChannelAndVideoName;
+            width: 100%;
+            height: 100%;
 
             display: flex;
 
             .imgChannel {
-                width: 25%;
+                width: 13%;
                 height: 100%;
 
                 display: flex;
@@ -199,15 +201,15 @@ body {
                 align-items: center;
 
                 img {
-                    width: 40px;
-                    height: 40px;
+                    width: 38px;
+                    height: 38px;
                     object-fit: cover;
                     border-radius: 50%;
                 }
             }
 
             .videoName {
-                width: 75%;
+                width: 87%;
                 height: 100%;
 
                 display: flex;
@@ -231,9 +233,9 @@ body {
             justify-content: center;
 
             .boxVideoInfo {
-                width: 75%;
+                width: 81%;
                 height: 100%;
-                margin-left: 25%;
+                margin-left: 19%;
 
                 p {
                     font-weight: 400;
