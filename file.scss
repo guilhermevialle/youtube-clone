@@ -626,6 +626,7 @@ body {
             height: 100%;
 
             display: flex;
+            justify-content: space-between;
 
             .imgChannel {
                 width: 13%;
@@ -644,9 +645,9 @@ body {
             .videoName {
                 width: 87%;
                 height: 100%;
+                margin-left: 6.5%;
 
                 display: flex;
-                justify-content: center;
                 align-items: center;
 
                 h4 {

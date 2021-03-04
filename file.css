@@ -687,6 +687,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section .videoSection .imgChannelAndVideoName .imgChannel {
@@ -706,12 +709,10 @@ body {
 .section .videoSection .imgChannelAndVideoName .videoName {
   width: 87%;
   height: 100%;
+  margin-left: 6.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
