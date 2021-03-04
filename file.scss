@@ -117,7 +117,92 @@ body {
 
                 position: absolute;
                 right: 100%;
-                top: 0;
+                top: 5%;
+
+                .notificationTittle {
+                    width: 100%;
+                    height: 50px;
+
+                    border-bottom: 1px solid #303030;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    p,
+                    svg {
+                        margin: 0 20px;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        color: white;
+                    }
+                }
+
+                .oneNotification {
+                    width: 100%;
+                    height: 93px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        background-color: #383838;
+                    }
+
+                    .channelImgNovamentekk {
+                        width: 20%;
+                        height: 80%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 48px;
+                            height: 48px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .videoNameNovamentekk {
+                        width: 50%;
+                        height: 80%;
+
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+
+                        p {
+                            color: white;
+                            font-weight: 400;
+                        }
+
+                        span {
+                            color: #909090;
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    .videoThumb {
+                        width: 30%;
+                        height: 80%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 86px;
+                            height: 48px;
+
+                            object-fit: cover;
+                        }
+                    }
+                }
             }
         }
 

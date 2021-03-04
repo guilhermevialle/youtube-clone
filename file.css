@@ -132,7 +132,118 @@ body {
   cursor: pointer;
   position: absolute;
   right: 100%;
-  top: 0;
+  top: 5%;
+}
+
+.header .userOptions .notifications .notificationsDropDown .notificationTittle {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .userOptions .notifications .notificationsDropDown .notificationTittle p,
+.header .userOptions .notifications .notificationsDropDown .notificationTittle svg {
+  margin: 0 20px;
+}
+
+.header .userOptions .notifications .notificationsDropDown .notificationTittle p {
+  font-weight: 400;
+  color: white;
+}
+
+.header .userOptions .notifications .notificationsDropDown .oneNotification {
+  width: 100%;
+  height: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .userOptions .notifications .notificationsDropDown .oneNotification:hover {
+  background-color: #383838;
+}
+
+.header .userOptions .notifications .notificationsDropDown .oneNotification .channelImgNovamentekk {
+  width: 20%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .userOptions .notifications .notificationsDropDown .oneNotification .channelImgNovamentekk img {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.header .userOptions .notifications .notificationsDropDown .oneNotification .videoNameNovamentekk {
+  width: 50%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .userOptions .notifications .notificationsDropDown .oneNotification .videoNameNovamentekk p {
+  color: white;
+  font-weight: 400;
+}
+
+.header .userOptions .notifications .notificationsDropDown .oneNotification .videoNameNovamentekk span {
+  color: #909090;
+  font-size: 0.9rem;
+}
+
+.header .userOptions .notifications .notificationsDropDown .oneNotification .videoThumb {
+  width: 30%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .userOptions .notifications .notificationsDropDown .oneNotification .videoThumb img {
+  width: 86px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header .userOptions .gridBar {
