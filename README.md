@@ -1,4 +1,4 @@
-# YouTube Home Page Clone
+# YouTube Home Clone
 
 Developed with JavaScript, HTML and CSS. 
 
