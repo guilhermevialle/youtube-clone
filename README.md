@@ -1,5 +1,6 @@
 # YouTube Home Clone
-This app aims to clone the youtube interface with HTMl, CSS and JavaScript.
+
+This app consists of cloning the entire YoutTube interface and its main front-end features.
 
 ## Preview
 
